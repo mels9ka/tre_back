@@ -8,7 +8,7 @@ services:
       args:
         SYMFONY_VERSION: ${SYMFONY_VERSION:-}
         STABILITY: ${STABILITY:-stable}
-#    restart: unless-stopped
+    restart: unless-stopped
     volumes:
       - ./:/srv/app:cached
       - ./var:/srv/app/var
